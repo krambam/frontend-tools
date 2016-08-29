@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<nav id="main-nav">
+		<ul>
+			<li>hello</li>
+			<li>world</li>
+		</ul>
+	</nav>
+	<div class="top-section">
+		<h1 id="trigger">
+			hello
+		</h1>
+	</div>
+	<section>
+		<ul>
+			<li>test</li>
+			<li>test</li>
+		</ul>
+	</section>
+	<script src="bundle.js"></script>
+	<script>
+		mlFrontendTools.mMenu({
+			pageWrapId: 'mm-page-wrap',
+            navId: 'main-nav',
+            mobnavTriggerId: 'trigger',
+            elementsToWrapSelector: 'body > header, body > section, body > div, body > footer'
+		});
+	</script>
+</body>
+</html>
