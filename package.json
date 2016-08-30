@@ -1,7 +1,7 @@
 {
   "name": "medialisk-frontend-tools",
   "version": "1.0.6",
-  "description": "Medialisk Frontend Tools",
+  "description": "Medialisk Frontend Tools.",
   "main": "dist/medialisk-frontend-tools.js",
   "scripts": {
     "gitcommit": "git add . -A && git commit -m 'patch' && git push",
