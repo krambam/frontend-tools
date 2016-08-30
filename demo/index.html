@@ -15,7 +15,7 @@
 		</ul>
 	</nav>
 	<div class="top-section">
-		<h1 id="trigger">
+		<h1 id="mobnav-trigger">
 			hello x
 		</h1>
 	</div>
@@ -27,12 +27,25 @@
 	</section>
 	<script src="bundle.js"></script>
 	<script>
-		console.log('hello');
 		mlFrontendTools.mMenu({
 			pageWrapId: 'mm-page-wrap',
             navId: 'main-nav',
-            mobnavTriggerId: 'trigger',
-            elementsToWrapSelector: 'body > header, body > section, body > div, body > footer'
+            mobnavTriggerId: 'mobnav-trigger',
+            elementsToWrapSelector: 'body > header, body > section, body > div, body > footer, body > nav',
+            mmenuOptions: {
+            	navbar: {
+            		title: '<h4>I am the title</h4>'
+            	}
+            },
+            mmenuConfig: {
+            	className: {
+
+            	},
+            	offCanvas: {
+
+            	},
+            	clone: true
+        	}
 		});
 	</script>
 </body>
