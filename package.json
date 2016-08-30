@@ -14,7 +14,7 @@
     "jquery": "^3.1.0",
     "jquery.mmenu": "^5.7.1",
     "normalize.css": "^4.2.0",
-    "stylolisk": "^1.0.22"
+    "stylolisk": "^1.0.23"
   },
   "repository": {
     "type": "git",
