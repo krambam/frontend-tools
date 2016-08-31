@@ -45,6 +45,32 @@ var mmenu = require('jquery.mmenu');
             $('#' + opts.mobnavTriggerId ).click(function() {
                 $(mobileNavSelector).data( "mmenu" ).open();
             });
+        },
+
+        addTargetBlankToExternalAnchorTags: function(allAnchorTags){
+            allAnchorTags = allAnchorTags ? allAnchorTags : $('a');
+            addTargetBlankToPdfAnchors(allAnchorTags);
+            addTargetBlankToExternalLinkAnchors(allAnchorTags);
+
+            function addTargetBlankToPdfAnchors(allAnchorTags){
+                var anchorTagsPointingToPdfFile =  allAnchorTags.filter(function(){
+                    var hrefValue = $(this).attr('href');
+                    if(hrefValue){
+                        return hrefValue.substr(-4) === '.pdf';
+                    }
+                });
+                anchorTagsPointingToPdfFile.attr("target", "_blank");
+            }
+            function addTargetBlankToExternalLinkAnchors(allAnchorTags){
+                var anchorTagsPointingToExternalPage =  allAnchorTags.filter(function(){
+                    var hrefValue = $(this).attr('href');
+                    if(hrefValue){
+                        var regexP = new RegExp('(http\:\/\/)|(https\:\/\/)|(\/\/)', 'g');
+                        return hrefValue.match(regexP);
+                    }
+                });
+                anchorTagsPointingToExternalPage.attr("target", "_blank");
+            }
         }
     
     };
