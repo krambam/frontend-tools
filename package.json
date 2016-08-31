@@ -5,10 +5,7 @@
   "main": "dist/medialisk-frontend-tools.js",
   "scripts": {
     "gitcommit": "git add . -A && git commit -m 'patch' && git push",
-    "mlpatch": "git add . -A && git commit -m 'patch' && git push && npm version patch && git push --tags && git push && npm publish",
-    "preversion": "git add . -A",
-    "version": "git add . -A",
-    "postversion": ""
+    "mlpatch": "git add . -A && git commit -m 'patch' && git push && npm version patch && git push --tags && git push && npm publish"
   },
   "dependencies": {
     "jquery": "^3.1.0",
