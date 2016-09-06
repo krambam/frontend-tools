@@ -5,7 +5,7 @@
   "main": "dist/medialisk-frontend-tools.js",
   "scripts": {
     "mlcommit": "git add . -A; git commit -m 'fix'",
-    "mlpatch": "build.sh"
+    "mlpatch": "git add . -A && git commit -m 'test' | cat && echo 'hello'"
   },
   "dependencies": {
     "jquery": "^3.1.0",
