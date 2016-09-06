@@ -6,7 +6,7 @@
   "scripts": {
     "mlcommit": "git add . -A && git commit -m 'fix' && git push",
     "premlpatch": "git add . -A && git commit -m 'patch'",
-    "mlpatch": "npm version patch && npm publish && git push && git push --tags"
+    "mlpatch": "git status"
   },
   "dependencies": {
     "jquery": "^3.1.0",
