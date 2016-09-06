@@ -1,0 +1,135 @@
+.container,
+.container-fluid,
+.row{
+    &:extend(.clearfix all);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container{
+    @media (min-width: @screen-sm-min) {
+        width: @container-sm;
+    }
+    @media (min-width: @screen-md-min) {
+        width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+        width: @container-lg;
+    }
+}
+
+.col(@width) {
+    display: block;
+    width: 100%;
+    float: left;
+    // padding-left: ceil(@grid-gutter-width / 2);
+    // padding-right: ceil(@grid-gutter-width / 2);
+    @media(min-width: @screen-desktop-min){
+        width: @width * 100%;
+    }
+}
+
+
+
+// ALL MEDIA QUERIES
+// ----------------------------------------------------------------
+
+.col-lg(@width) {
+    @media (min-width: @screen-lg-min) {
+        width: @width * 100%;
+    }
+}
+.col-md(@width) {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+        width: @width * 100%;
+    }
+}
+.col-sm(@width) {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        width: @width * 100%;
+    }
+}
+.col-xs(@width) {
+    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max)  {
+        width: @width * 100%;
+    }
+}
+.col-xxs(@width) {
+    @media (max-width: @screen-xxs-max)  {
+        width: @width * 100%;
+    }
+}
+
+// hider helpers
+.hidden-desktop(){
+    @media (min-width: @screen-desktop-min) {
+        display: none;
+    }
+}
+.hidden-mobile(){
+    @media (max-width: @screen-mobile-max) {
+        display: none;
+    }
+}
+.hidden-lg() {
+    @media (min-width: @screen-lg-min) {
+        display: none;
+    }
+}
+.hidden-md() {
+    @media (min-width: @screen-md-min) {
+        display: none;
+    }
+}
+.hidden-sm(){
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        display: none;
+    }
+}
+.hidden-xs() {
+    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max)  {
+        display: none;
+    }
+}
+.hidden-xxs() {
+    @media (max-width: @screen-xxs-max)  {
+        display: none;
+    }
+}
+
+// repsponsive inline helper
+.responsive-desktop(@rules) {
+    @media (min-width: @screen-desktop-min) {
+        @rules();
+    }
+}
+.responsive-mobile(@rules) {
+    @media (max-width: @screen-mobile-max) {
+        @rules();
+    }
+}
+.responsive-lg(@rules) {
+    @media (min-width: @screen-lg-min) {
+        @rules();
+    }
+}
+.responsive-md(@rules) {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+        @rules();
+    }
+}
+.responsive-sm(@rules){
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        @rules();
+    }
+}
+.responsive-xs(@rules) {
+    @media (min-width: @screen-xs-min) and (max-width: @screen-xs-max)  {
+        @rules();
+    }
+}
+.responsive-xxs(@rules) {
+    @media (max-width: @screen-xxs-max)  {
+        @rules();
+    }
+}
