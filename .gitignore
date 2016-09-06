@@ -1,7 +1,7 @@
 # generic
 .DS_Store
 
-# NPM
+# NPM test
 node_modules
 npm-debug.log
 
