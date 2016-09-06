@@ -4,9 +4,8 @@
   "description": "Medialisk Frontend Tools.",
   "main": "dist/medialisk-frontend-tools.js",
   "scripts": {
-    "mlcommit": "git add . -A && git commit -m 'fix' --quiet",
-    "premlpatch": "git add . -A && git commit -m 'patch' --quiet",
-    "mlpatch": "git status"
+    "mlcommit": "git add . -A; git commit -m 'fix'",
+    "mlpatch": "build.sh"
   },
   "dependencies": {
     "jquery": "^3.1.0",
