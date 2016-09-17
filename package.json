@@ -1,6 +1,6 @@
 {
   "name": "medialisk-frontend-tools",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Medialisk Frontend Tools.",
   "main": "dist/medialisk-frontend-tools.js",
   "repository": {
