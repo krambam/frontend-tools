@@ -1,7 +1,7 @@
 // dependencies
-global.jquery = require('jquery');
-global.$ = global.jquery;
-var mmenu = require('jquery.mmenu');
+// global.jquery = require('jquery');
+// global.$ = global.jquery;
+// var mmenu = require('jquery.mmenu');
 
 (function(window){
     var mlFrontendTools = {

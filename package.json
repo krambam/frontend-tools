@@ -6,7 +6,6 @@
   "dependencies": {
     "jquery": "2.2.4",
     "jquery.mmenu": "5.7.2",
-    "normalize.css": "4.2.0",
     "stylolisk": "^1.0.28"
   },
   "repository": {
