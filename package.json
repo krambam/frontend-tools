@@ -3,11 +3,6 @@
   "version": "2.0.2",
   "description": "Medialisk Frontend Tools.",
   "main": "dist/medialisk-frontend-tools.js",
-  "dependencies": {
-    "jquery": "2.2.4",
-    "jquery.mmenu": "5.7.2",
-    "stylolisk": "^1.0.28"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:medialisk/frontend-tools.git"
